@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>捏臉系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo">捏臉</h1>
+      </div>
+
+      <div id="category" class="category-tabs"></div>
+
+      <div id="items" class="item-grid"></div>
+
+      <div class="tool-panel move-controls">
+        <div class="tool-title">嘴巴位置微調</div>
+
+        <div class="game-pad">
+          <div></div>
+          <button class="pad-btn" onclick="moveLayer('mouthBase', 0, -5)">↑</button>
+          <div></div>
+
+          <button class="pad-btn" onclick="moveLayer('mouthBase', -5, 0)">←</button>
+          <button class="pad-reset" onclick="resetLayerPosition('mouthBase')">R</button>
+          <button class="pad-btn" onclick="moveLayer('mouthBase', 5, 0)">→</button>
+
+          <div></div>
+          <button class="pad-btn" onclick="moveLayer('mouthBase', 0, 5)">↓</button>
+          <div></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="preview-panel">
+      <div class="preview-stage">
+        <div class="avatar-card">
+          <div id="canvas" class="canvas"></div>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button
+          class="action-btn primary icon-btn"
+          onclick="randomizeAvatar()"
+          aria-label="隨機角色"
+          title="隨機角色"
+        >
+          <svg class="dice-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect>
+            <circle cx="8" cy="8" r="1.5"></circle>
+            <circle cx="12" cy="12" r="1.5"></circle>
+            <circle cx="16" cy="16" r="1.5"></circle>
+          </svg>
+          <span class="sr-only">隨機角色</span>
+        </button>
+        <button class="action-btn primary" onclick="downloadAvatarPNG()">下載 PNG</button>
+        <button class="action-btn secondary" onclick="savePreset()">儲存設定</button>
+        <button class="action-btn secondary" onclick="loadPreset()">讀取設定</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

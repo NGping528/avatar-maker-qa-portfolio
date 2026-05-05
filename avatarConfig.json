@@ -1,0 +1,65 @@
+{
+  "layers": [
+    {
+      "name": "body",
+      "zIndex": 1,
+      "items": [
+        { "file": "body1.png", "thumb": "body1_thumb.png", "character": "rabbit" },
+        { "file": "body2.png", "thumb": "body2_thumb.png", "character": "bear" }
+      ]
+    },
+    {
+      "name": "blush",
+      "zIndex": 2,
+      "items": [
+        { "file": "blush1.png", "thumb": "blush1_thumb.png" },
+        { "file": "blush2.png", "thumb": "blush2_thumb.png" },
+        { "file": "blush3.png", "thumb": "blush3_thumb.png" }
+      ]
+    },
+    {
+      "name": "mouthBase",
+      "zIndex": 3,
+      "onlyFor": ["bear"],
+      "items": [
+        { "file": "mouthBase1.png", "thumb": "mouthBase1_thumb.png" }
+      ]
+    },
+    {
+      "name": "eyes",
+      "zIndex": 4,
+      "items": [
+        { "file": "eyes1.png", "thumb": "eyes1_thumb.png" },
+        { "file": "eyes2.png", "thumb": "eyes2_thumb.png" },
+        { "file": "eyes3.png", "thumb": "eyes3_thumb.png" },
+        { "file": "eyes4.png", "thumb": "eyes4_thumb.png" },
+        { "file": "eyes5.png", "thumb": "eyes5_thumb.png" },
+        { "file": "eyes6.png", "thumb": "eyes6_thumb.png" }
+      ]
+    },
+    {
+      "name": "mouth",
+      "zIndex": 5,
+      "items": [
+        { "file": "mouth1.png", "thumb": "mouth1_thumb.png" },
+        { "file": "mouth2.png", "thumb": "mouth2_thumb.png" },
+        { "file": "mouth3.png", "thumb": "mouth3_thumb.png" },
+        { "file": "mouth4.png", "thumb": "mouth4_thumb.png" },
+        { "file": "mouth5.png", "thumb": "mouth5_thumb.png" }
+      ]
+    },
+    {
+      "name": "hair",
+      "zIndex": 6,
+      "items": [
+        { "file": "hair1.png", "thumb": "hair1_thumb.png" },
+        { "file": "hair2.png", "thumb": "hair2_thumb.png" },
+        { "file": "hair3.png", "thumb": "hair3_thumb.png" },
+        { "file": "hair4.png", "thumb": "hair4_thumb.png" },
+        { "file": "hair5.png", "thumb": "hair5_thumb.png" },
+        { "file": "hair6.png", "thumb": "hair6_thumb.png" },
+        { "file": "hair7.png", "thumb": "hair7_thumb.png" }
+      ]
+    }
+  ]
+}
